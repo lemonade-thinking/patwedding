@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_content %}
+    <head>
+    <style>
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 350px;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    div.spacer {
+    height: 100px;
+    }
+    </style>
+    </head>
+
+    <h1><center>This is how we started</center></h1>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus.
+    Tellus pellentesque eu tincidunt tortor aliquam nulla.
+    Donec massa sapien faucibus et molestie ac feugiat sed lectus.
+    Scelerisque in dictum non consectetur a erat nam.
+    Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus.
+    Mauris vitae ultricies leo integer malesuada. Convallis aenean et tortor
+    at risus viverra adipiscing at. Pharetra magna ac placerat
+    vestibulum lectus mauris ultrices. Iaculis eu non diam phasellus vestibulum.
+    Rhoncus urna neque viverra justo nec ultrices dui sapien.
+    Sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.
+    </p>
+
+    <div class="gallery">
+    <a target="_blank" href="{% static 'images/pat1.jpg' %}">
+        <img src="{% static 'images/pat1.jpg' %}" alt="Cinque Terre" width="1000" height="800">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="{% static 'images/pat1.jpg' %}">
+            <img src="{% static 'images/pat1.jpg' %}" alt="Cinque Terre" width="1000" height="800">
+        </a>
+    <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="{% static 'images/pat1.jpg' %}">
+            <img src="{% static 'images/pat1.jpg' %}" alt="Cinque Terre" width="1000" height="800">
+        </a>
+    <div class="desc">Add a description of the image here</div>
+    </div>
+{% endblock %}

@@ -1,0 +1,1 @@
+web: gunicorn patwedding.wsgi --log-file -
