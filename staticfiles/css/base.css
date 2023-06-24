@@ -1,0 +1,30 @@
+body {
+    background-color: hsla(0, 100%, 90%, 0.2);
+}
+
+/* An HSLA color value is specified with hsla(hue, saturation, lightness, alpha),
+where the alpha parameter defines the opacity.
+The alpha parameter is a number between
+0.0 (fully transparent) and 1.0 (fully opaque). */
+
+h1 {
+    color: maroon;
+    font-family: "Helvetica", "Lucida Handwriting", cursive;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h2 {
+    color: maroon;
+    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+}
+
+p {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: justify;
+  }
+
+spacer {
+    height: 10px;
+  }
