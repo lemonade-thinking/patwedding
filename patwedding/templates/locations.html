@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_content %}
+  <head>
+    <title>Locations</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  </head>
+  <body>
+  <h2_page>Wedding's Locations</h2_page>
+  <p>
+    Our wedding ceremony will take place at the Glocke in Schwäbisch Hall
+    after that we will proceed together to the Waldhalle in Mainhardt.
+    The Locations provide enough space for everyone and we believe it will
+    be an unforgettable day for our guests.
+  </p>
+
+  <p>
+    Unsere Trauung wird in der Glocke und die Feier in wunderschönen
+    Mainhardter Waldhalle stattfinden. Die Locations bietet genug Platz
+    für all unsere Gäste und wir sind sicher, dass es ein
+    unvergesslicher Tag wird.
+  </p>
+
+  <h3_page>P&J Wedding's Ceremony (Trauung)</h3_page>
+  <p>
+    Location/Standort: Gemeinschaftsgemeinde Glocke (Süddeutscher Gemeinschaftsverband e.V.)<br>
+    Address/Adresse: Robert-Bosch-Straße 21, 74523 Schwäbisch Hall, Germany
+  </p>
+  <h3_page>P&J Wedding's Buffet (Feier)</h3_page>
+  <p>
+    Location/Standort: Mainhardter Waldhalle<br>
+    Address/Adresse: Mainhardter Waldhalle, Im Römerkastell 12, 74535 Mainhardt, Germany
+  </p>
+  <div id="map"></div>
+  <script type="text/javascript"
+    src="{% static 'javascript/index.js' %}"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR5L3EPaglB0Dd1c_mSatVIHUvkl_qs5c
+          &map_ids=c0b1d8ce173615cf
+          &callback=initMap">
+
+  </script>
+</body>
+{% endblock %}
