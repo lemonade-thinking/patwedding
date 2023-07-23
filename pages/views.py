@@ -13,3 +13,9 @@ class HomePageView(TemplateView):
 
 class AboutPageView(TemplateView):
     template_name = "about.html"
+
+class EventPageView(TemplateView):
+    template_name = "wedding_day.html"
+
+class LocationsPageView(TemplateView):
+    template_name = "locations.html"
