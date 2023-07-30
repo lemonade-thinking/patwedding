@@ -2,7 +2,8 @@
     map = new google.maps.Map(document.getElementById("map"), {
       mapId: "c0b1d8ce173615cf",
       center: { lat: 49.08650609057263, lng: 9.612711183128699 },
-      zoom: 12,
+      zoom: 10,
+      scrollwheel: true
     });
     // Center at Landgashof Sonne for the two markers
     // 49.08650609057263, 9.612711183128699
