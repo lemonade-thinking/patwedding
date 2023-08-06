@@ -25,6 +25,10 @@ h2_page {
     font-size: 50px;
 }
 
+custom_body {
+    background-color: azure;
+}
+
 h3_page {
     color: maroon;
     font-family: "Brush Script MT", "Lucida Handwriting", cursive;
